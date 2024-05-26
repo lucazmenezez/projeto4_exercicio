@@ -1,12 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto 4</title>
     <link rel="stylesheet" href="./dist/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Olá</h1>
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <img src="./src/images/band-of-brothers-logo.svg" alt="Logo Band Of Brothers">
+            </h1>
+            <nav class="header__buttons">
+                <ul class="header__list">
+                    <li class="header__list__item">
+                        <a href="#">
+                            Início
+                        </a>
+                    </li>
+                    <li class="header__list__item">
+                        <a href="#">
+                            Sobre
+                        </a>
+                    </li>
+                    <li class="header__list__item">
+                        <a href="#">
+                            Episódios
+                        </a>
+                    </li>
+                    <li class="header__list__item">
+                        <a href="#">
+                            Mais
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="hero">
+        <section class="hero__content">
+            <img class="hero__content__logo" src="./src/images/image_logo_hero_bob.avif" alt="Band Of Brothers logo hero">
+            <ul class="hero__content__list">
+                <li class="hero__content__list__item">14</li>
+                <li class="hero__content__list__item">2001</li>
+                <li class="hero__content__list__item">1 Temporada</li>
+                <li class="hero__content__list__item">Drama</li>
+                <li class="hero__content__list__item">Ação</li>
+            </ul>
+            <p class="hero__content__text text">
+                Minissérie em dez capítulos que mostra a trajetória dos integrantes do grupo de elite de paraquedistas americanos na Segunda Guerra Mundial.
+            </p>
+            <div class="container__button">
+                <a class="button" href="#">Assistir</a>
+            </div>
+        </section>
+    </div>
+
 </body>
 </html>
