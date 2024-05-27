@@ -1,6 +1,7 @@
 @use 'header';
 @use 'variaveis';
 @use 'hero';
+@use 'about';
 
 * {
     padding: 0;
@@ -42,4 +43,8 @@
 
 .title--small {
     @include title(28px);
+}
+
+body {
+    background-color: variaveis.$corFundo;
 }
