@@ -1,0 +1,45 @@
+@use 'variaveis';
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 0 24px 0;
+    background-color: variaveis.$corSecundaria;
+
+    &__icons {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 12px;
+        font-size: 24px;
+        
+        :first-child {
+            margin-right: 6px;
+        }
+
+        a {
+            color: variaveis.$corBotaoPrimario;
+            overflow: hidden; /* Garantir que os efeitos de zoom não "escapem" do item */
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.10); /* Aumenta a escala do item */
+            }
+        }
+    }
+
+    &__text {
+        text-align: center;
+
+        p {
+            margin: 0;
+            color: variaveis.$corBotaoPrimario;
+            font-weight: bold;
+
+            &:nth-child(1),
+            &:nth-child(2) {
+                margin-bottom: 2px;
+            }
+        }
+    }
+}

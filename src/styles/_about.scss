@@ -4,21 +4,23 @@
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
+    padding: 60px 0;
     min-height: 100vh;
 
     &__content {
         h2 {
             text-align: center;
-            padding: 40px 0;
-            color: #fff;
+            margin-bottom: 60px;
+            color: variaveis.$corSecundaria;
         }
 
         &__grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            color: #fff;
+            color: variaveis.$corSecundaria;
 
             img {
+                display: block;
                 max-width: 500px;
                 max-height: 300px;
                 width: 100%;
@@ -30,6 +32,12 @@
                 
                 h3 {
                     padding-bottom: 12px;
+                    margin-top: 0; 
+                }
+
+                p {
+                    text-align: justify; /* Justifica o texto */
+                    line-height: 1.6; /* Melhora a legibilidade */
                 }
             }
         }

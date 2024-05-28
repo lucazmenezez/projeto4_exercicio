@@ -15,7 +15,13 @@
         h1 {
             padding: 0;
             height: 34px;
-            color: #fff;
+            color: variaveis.$corSecundaria;
+            cursor: pointer;
+            transition: all .3s ease;
+
+            &:hover {
+                color: #fff;
+            }
         }
     }
 
@@ -29,7 +35,12 @@
             padding-left: 24px;
 
             a {
-                color: #fff;
+                color: variaveis.$corSecundaria;
+                transition: all .3s ease ;
+
+                &:hover {
+                    color: #fff;
+                }
             }
         }
     }
