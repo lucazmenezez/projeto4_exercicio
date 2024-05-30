@@ -1,22 +1,40 @@
 @use 'variaveis';
 
 .hero {
-    height: calc(100vh - 66px);
+    height: 600px;
     background-image: url(../../dist/images/imagem_band_of_brothers.webp);
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
+    position: relative; 
+
+    @media (max-width: 768px) {
+        display: block;
+        max-width: 768px;
+        width: 100vw;
+        height: auto;
+        background-size: contain;
+    }
 
     &__content {
         color: #fff;
         width: 100%;
         max-width: 50%;
-        margin: 0 auto;
+        margin: auto auto;
         position: absolute;
         display: flex;
         flex-direction: column;
         align-items: center;
         top: 15%;
+
+        @media (max-width: 768px) {
+            display: block; 
+            position: relative; 
+            max-width: 768px;
+            width: 90%;
+            padding-top: 55%;
+            margin: 0 auto;
+            top: 0;
+        }
 
         &__logo {
             width: 350px;
@@ -26,9 +44,17 @@
             display: flex;
             align-items: center;
             margin-top: 24px;
+
+            @media (max-width: 768px) {
+                flex-wrap: wrap;
+            }
     
             &__item {
                 padding-right: 12px;
+
+                @media (max-width: 768px) {
+                    padding-right: 6px; // Ajusta o espaçamento em dispositivos menores
+                }
             }
         }
 
@@ -54,6 +80,10 @@
 
                 &:hover {
                     background-color: lighten(variaveis.$corBotaoPrimario, 7%);
+                }
+
+                @media (max-width: 768px) {
+                    padding: 16px 48px;
                 }
             }
         }

@@ -50,4 +50,9 @@
 
 body {
     background-color: variaveis.$corFundo;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
 }
