@@ -76,7 +76,7 @@
                 text-transform: uppercase;
                 border-radius: 8px;
                 font-weight: bold;
-                transition: all .3s ease ;
+                transition: all .3s ease;
 
                 &:hover {
                     background-color: lighten(variaveis.$corBotaoPrimario, 7%);
