@@ -17,4 +17,11 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    const menuToggle = document.getElementById('menu-toggle');
+    const headerButtons = document.getElementById('header-buttons');
+
+    menuToggle.addEventListener('click', function() {
+        headerButtons.classList.toggle('active-menu');
+    });
 })
