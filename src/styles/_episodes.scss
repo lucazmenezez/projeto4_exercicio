@@ -59,6 +59,11 @@
 
             p {
                 margin: 0;
+                padding-bottom: 24px;
+
+                @media (max-width: 768px) {
+                    padding-bottom: 70px;
+                }
             }
 
             &:hover {
