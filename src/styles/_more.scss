@@ -27,6 +27,11 @@
         display: flex;
         justify-content: center;
 
+        @media (max-width: 768px) {
+            height: auto;
+            width: 90%;
+        }
+
         .video {
             border-radius: 8px;
         }

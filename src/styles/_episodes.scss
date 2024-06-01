@@ -9,6 +9,7 @@
     @media (max-width: 768px) {
         max-width: 768px;
         width: 90%;
+        padding-bottom: 60px;
     }
 
     @media (min-width: 769px) and (max-width: 1023px) {
@@ -22,6 +23,17 @@
         justify-content: space-between;
         color: variaveis.$corSecundaria;
         margin-bottom: 60px;
+
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 28px;
+                padding-right: 8px;
+            }
+
+            h3 {
+                font-size: 22px;
+            }
+        }
     }
 
     &__list {
